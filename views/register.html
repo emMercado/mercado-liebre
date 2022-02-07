@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pag register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="top-header">
+        <div class="logo">
+          <img
+            src="images/logo-mercado-liebre.svg"
+            alt="Logo de MercadoLiebre"
+          />
+        </div>
+        <div class="form" action="#" method="GET">
+          <div class="input">Buscar productos, marcas y más</div>
+          <div class="submit"><i class="fa fa-search"></i></div>
+        </div>
+        <p><i class="fas fa-hand-holding-usd"></i>Formulario de registro</p>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Ofertas</a></li>
+          <li><a href="#">Tiendas Oficiales</a></li>
+          <li><a href="#">Vender</a></li>
+          <li><a href="#">Ayuda</a></li>
+        </ul>
+        <ul>
+          <li>
+            <a href="/register"
+              >Creá tu cuenta <i class="far fa-id-card"></i
+            ></a>
+          </li>
+          <li>
+            <a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a>
+          </li>
+          <li>
+            <a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="burger-menu">
+        <i class="fa fa-bars burger"></i>
+      </div>
+    </header>
+    <section class="banner">
+      <img src="images/img-home-banner.jpg" alt="Banner de ofertas" />
+    </section>
+    <main class="register">
+      <section class="last-visit">
+        <h3>Basado en tu última visita</h3>
+        <div class="form">
+          <form action="/form" method="post">
+            <br />
+            <label for="POST-name">Nombre y Apellido:</label>
+            <input id="POST-name" type="text" name="nombre"/>
+            <br />
+            <label for="POST-name">Nombre de Usuario:</label>
+            <input id="POST-name" type="text" name="usuario" minlength="6" maxlength="10"/>
+            <br />
+            <label for="POST-name">Fecha Nacimiento:</label>
+            <input id="POST-name" type="date" name="fechaNac" />
+            <br />
+            <label for="POST-name">Domicilio:</label>
+            <input id="POST-name" type="text" name="domicilio" />
+            <br />
+            <label for="POST-name">Perfil de usuario:</label>
+            <div>
+              <input type="radio" id="buy" name="perfil" value="buy" checked />
+              <label for="buy">Comprador</label>
+            </div>
+            <div>
+              <input type="radio" id="sell" name="perfil" value="sell" />
+              <label for="sell">Vendedor</label>
+            </div>
+            <label for="POST-name">Categorias:</label>
+            <div>
+              <input
+                type="checkbox"
+                id="jugueteria"
+                name="jugueteria"
+                value="jugueteria"
+              />
+              <label for="jugueteria">Jugueteria</label>
+            </div>
+            <div>
+              <input type="checkbox" id="hogar" name="hogar" value="hogar" />
+              <label for="hogar">Hogar</label>
+            </div>
+
+            <div>
+              <input
+                type="checkbox"
+                id="electro"
+                name="electro"
+                value="electro"
+              />
+              <label for="electro">Electro</label>
+            </div>
+            <div>
+              <input type="checkbox" id="vida" name="vida" value="vida" />
+              <label for="vida">Vida sana</label>
+            </div>
+
+            <div>
+              <input type="checkbox" id="moda" name="moda" value="moda" />
+              <label for="moda">Moda</label>
+            </div>
+
+            <br />
+
+            <label for="POST-name">Foto de usuario:</label>
+            <input type="file" name="archivosubido" />
+
+            <br />
+            <label for="POST-name">Password:</label>
+            <input id="POST-name" type="password" name="password" minlength="6" maxlength="10" />
+            <br />
+            <label for="POST-name">Confirm Password:</label>
+            <input id="POST-name" type="password" name="password" minlength="6" maxlength="10" />
+            <br />
+            <br />
+
+            <input type="submit" value="Save" />
+            <br />
+            <br />
+
+            <input type="reset" value="Clear" />
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+    </footer>
+  </body>
+</html>
