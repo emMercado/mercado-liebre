@@ -23,9 +23,10 @@
             alt="Logo de MercadoLiebre"
           />
         </div>
-        <div class="form" action="#" method="GET">
-          <div class="input">Buscar productos, marcas y más</div>
-          <div class="submit"><i class="fa fa-search"></i></div>
+        <div class="search" action="#" method="GET">
+          <div class="input">
+            Buscar productos, marcas y más<i class="fa fa-search"></i>
+          </div>
         </div>
         <p><i class="fas fa-hand-holding-usd"></i>Formulario de registro</p>
       </div>
@@ -64,16 +65,33 @@
           <form action="/form" method="post">
             <br />
             <label for="POST-name">Nombre y Apellido:</label>
-            <input id="POST-name" type="text" name="nombre"/>
+            <input
+              id="POST-name"
+              type="text"
+              name="nombre"
+              placeholder="ej: Liebre Mercado"
+            />
             <br />
             <label for="POST-name">Nombre de Usuario:</label>
-            <input id="POST-name" type="text" name="usuario" minlength="6" maxlength="10"/>
+            <input
+              id="POST-name"
+              type="text"
+              name="usuario"
+              minlength="6"
+              maxlength="10"
+              placeholder="ej: mercadoliebre123"
+            />
             <br />
             <label for="POST-name">Fecha Nacimiento:</label>
             <input id="POST-name" type="date" name="fechaNac" />
             <br />
             <label for="POST-name">Domicilio:</label>
-            <input id="POST-name" type="text" name="domicilio" />
+            <input
+              id="POST-name"
+              type="text"
+              name="domicilio"
+              placeholder="ej: mercado liebre al 778"
+            />
             <br />
             <label for="POST-name">Perfil de usuario:</label>
             <div>
@@ -120,23 +138,33 @@
 
             <br />
 
-            <label for="POST-name">Foto de usuario:</label>
             <input type="file" name="archivosubido" />
 
             <br />
-            <label for="POST-name">Password:</label>
-            <input id="POST-name" type="password" name="password" minlength="6" maxlength="10" />
             <br />
-            <label for="POST-name">Confirm Password:</label>
-            <input id="POST-name" type="password" name="password" minlength="6" maxlength="10" />
+            <input
+              placeholder="Password"
+              id="POST-name"
+              type="password"
+              name="password"
+              minlength="6"
+              maxlength="10"
+            />
+            <br />
+            <input
+              placeholder="Confirmar Password:"
+              id="POST-name"
+              type="password"
+              name="password"
+              minlength="6"
+              maxlength="10"
+            />
             <br />
             <br />
-
-            <input type="submit" value="Save" />
-            <br />
-            <br />
-
-            <input type="reset" value="Clear" />
+            <div class="button-register">
+              <button type="reset" value="Clear">Limpiar</button>
+              <button type="submit">Registrar</button>
+            </div>
           </form>
         </div>
       </section>
